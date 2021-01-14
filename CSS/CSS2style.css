@@ -1,0 +1,348 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+}
+
+body{
+    margin:0;
+  }
+
+#container{
+
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+}
+
+#logo{
+    position: relative;
+    width:100%;
+    height:150px;
+    left:0;
+    right:20%;
+}
+
+#think{
+    height:300px;
+    width: 200px;
+}
+
+
+
+#arrow-list li{
+    list-style: url(../images/rightarrow.svg);
+    
+}
+
+#mainNav{
+background-position: .5em center;
+min-height:50px;
+line-height: 50px;
+text-decoration: none;
+display:block;
+box-sizing:border-box;
+margin:0.5em;
+background-color: rgba(118, 223, 32, 0.918);
+}
+
+#Navigation{
+    display:flex;
+    flex-flow:column wrap;
+    gap:20px;
+    align-items: center;
+    justify-content:center;
+   list-style-type: none;
+   background-color:rgb(243, 243, 243)
+
+}
+
+.mainicon{
+ width:50px;
+ height:50px;
+}
+
+#mainpic{
+       width:100%;
+       height:auto;
+}
+
+#second-Picture{
+    width:319px;
+    height:250px;
+    position: relative;
+    right:38px;
+    
+}
+
+
+.third-picture{
+           width:320px;
+           position: relative;
+           right:80px;
+           height:250px;
+}
+
+#go-green{
+     
+      width:316px;
+      height:auto;
+      right:-0.1em;
+      position: relative;
+
+
+
+
+}
+#icon{
+    min-width:50px;
+    max-width:80px;
+}
+
+#diamond-List li{
+    list-style: url(../images/diamond.svg);
+}
+
+#box1{
+ background-color: rgba(0, 219, 91, 0.932);
+ margin:0;
+ padding:2em;
+}
+#box1 h1{
+    font-size:30px;
+}
+
+#box4{
+    background-color:rgb(217, 98, 233);
+
+}
+#box3{
+    background-color: rgb(12, 212, 238);
+}
+
+#box2{
+  background-color: rgba(247, 207, 132, 0.918);
+  
+}
+
+
+
+
+#footer-box{
+    display:flex;
+   justify-content: center;
+    flex-direction: column;
+    background-color: rgb(5, 133, 172);
+}
+
+#footer-list li:nth-child(1){
+    list-style: url(../images/MapsMobile.svg) ;
+   
+  
+  }
+  #footer-list li:nth-child(2){
+    list-style: url(../images/SmartphoneMobile.svg);
+   
+  }
+  #footer-list li:nth-child(3){
+    list-style: url(../images/GmailMobile.svg);
+    
+  }
+  #footer-list li:nth-child(4){
+    list-style: url(../images/WhatsappMobile.svg);
+   
+  }
+  
+
+/*-----------------//----CSS2 Desktop view------------//--------------------*/
+@media only screen and (min-device-width:1281px){
+*{
+    font-size:20px;
+}
+    h1,h2{
+        font-size:30px;
+        text-transform: capitalize;
+    }
+   #mainNav{
+    border:solid black .5em;
+    }
+    #Navigation{
+        display:grid;
+        grid-template-rows: auto auto auto auto  ;
+        border:solid black .5em;
+        gap:20px;
+    
+    }
+
+#logo{
+    height:300px;
+    width:400px;
+    position: relative;
+    left:35%;
+    border:solid black .2em;
+}
+
+#container{
+    display:grid;
+    justify-items: center;
+    grid-template-rows:auto auto auto;
+    grid-template-columns:auto auto  ;
+    border:solid black .3em;
+}
+#box1{
+    background-color:#c5cbe3;
+   
+}
+
+#think{
+    width:300px;
+    height:500px;
+    border:solid black .3em;
+}
+#think:hover{
+    transform: scale(2,1);
+    -webkit-transform: scale(2,1);
+    -moz-transform: scale(2,1);
+}
+ 
+#box2{
+      background-color:#DAAD86 ;
+      padding:.5em;
+   
+}
+
+#second-Picture{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width:60%;
+}
+
+.third-picture{
+    display:block;
+    margin-left:40%;
+    margin-right:60%;
+    width:60%;
+
+}
+figcaption{
+      text-align: center;
+}
+
+
+#box3{
+    background-color:#BC986A;
+ 
+}
+
+
+#box4{
+    background-color:#FBEEC1;
+  
+}
+
+#diamond-List li{
+   
+    color:rgb(17, 0, 253);
+    position: relative;
+    left:30%;
+}
+#icon{
+    position: relative;
+    left:30%;
+    width:50px;
+    height:50px;
+}
+#link-description{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#footer-box{
+     position:relative;
+     align-items: center;
+}
+
+#footer-list li:nth-child(1){
+    list-style: url(../images/map.svg) ;
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+  
+  }
+  #footer-list li:nth-child(2){
+    list-style: url(../images/smartphone.svg);
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+
+  }
+  #footer-list li:nth-child(3){
+    list-style: url(../images/gmail.svg);
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+  }
+  #footer-list li:nth-child(4){
+    list-style: url(../images/whatsapp.svg);
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+  }
+
+  
+}
+/*-------CSS Styling for IPad----*/
+@media only screen and (min-device-width:768px) and (max-width:1024px) {
+
+*{
+font-size: 35px;
+   
+}
+ #logo{
+     height:300px;
+ }   
+
+#think{
+    width:300px;
+    height:500px;
+    position: relative;
+    left:150px;
+    border:solid black .2em;
+ }
+ .mainicon{
+     width:100px;
+     height: 100px;
+ }
+.box{
+    padding:0.5em;
+}
+#second-Picture{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width:450px;
+    height:350px;
+    border:solid black .2em;
+}
+
+.third-picture{
+    display:block;
+    margin-left:150px;
+    margin-right:500px;
+    width:450px;
+    height:350px;
+    border:solid black .2em;
+}
+figcaption{
+    font-style: italic;
+
+}
+
+#go-green{
+    width:95%;
+     border:solid black .2em;
+}
+
+#footer-list li{
+    font-size:35px;
+   
+    color:rgb(255, 255, 255);
+    
+}
+}  

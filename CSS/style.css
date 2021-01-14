@@ -1,0 +1,1170 @@
+
+*{
+  font-size:20px;
+  color:black;
+}
+
+body{
+  margin:0;
+}
+
+#Navigation{
+  display:grid ;
+  justify-items:center;
+grid-template-rows: auto auto auto auto;
+  list-style-type:none ;
+ background-color: rgb(255, 255, 255);
+  top:2%;
+  right:10%;
+  left:10%;
+  gap:14px;
+  font-size:20px;
+}
+
+
+#Navi{
+  display:grid ;
+    justify-items:center;
+    grid-template-rows: auto auto auto auto;
+    align-content:center ;
+    grid-gap:10px;
+  list-style-type: none;
+ 
+ gap:10px;
+ font-size:20px;
+ 
+}
+
+
+.list a:hover{
+  color:rgb(0, 139, 23);
+  text-decoration: none;
+}
+
+#logo{
+  display:flex;
+  justify-content:center;
+ 
+  position: relative;
+  left:20%;
+  width:200px;
+  height:160px;
+  
+}
+
+h1,h2{
+    font-family:Times New Roman;
+    font-weight: bold;
+    color:rgba(0, 1, 3, 0.87);
+    font-size:20px;
+    text-align: center;
+}
+footer ul li{
+    list-style-type: none;
+    padding:10px;
+    font-size:20px;
+}
+.FootIcon{
+    width:30px;
+    height:30px;
+}
+
+
+.dropbtn {
+  padding:8px ;
+  font-size:20px ;
+  border: none;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width:100px ;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#footer-list li:nth-child(1){
+  list-style: url(../images/MapsMobile.svg) ;
+  color:rgb(255, 255, 255);
+
+}
+#footer-list li:nth-child(2){
+  list-style: url(../images/SmartphoneMobile.svg);
+  color:rgb(255, 255, 255);
+}
+#footer-list li:nth-child(3){
+  list-style: url(../images/GmailMobile.svg);
+  color:rgb(255, 255, 255);
+}
+#footer-list li:nth-child(4){
+  list-style: url(../images/WhatsappMobile.svg);
+ color:rgb(255, 255, 255);
+}
+
+
+
+
+/*-----------------------home page css styling-----------------------*/
+
+#video{
+    width:320px;
+    height:auto;
+    position: relative;
+    left:0.05px;
+}
+
+#maintopic{
+position: absolute;
+top:70%;
+font-size:20px;
+right:5%;
+color:rgb(248, 239, 239);
+text-transform: uppercase;
+font-family:Lucida Handwriting;
+}
+
+#subheading{
+position: absolute;
+top: 80%;
+font-size:20px;
+color:white;
+font-family:Lucida Handwriting;
+text-transform: uppercase;
+}
+
+
+#flexContainer{
+  display:flex;
+  flex-direction:column;
+  background-color:#659DBD;
+  padding:0;
+  width: auto;
+  margin:0;
+}
+
+
+ 
+  
+.box{
+  display:flex;
+  flex-flow:column;
+  text-align: center;
+  background-color:rgb(221, 219, 210);
+  padding:0.5em;
+  margin:0;  
+}
+
+
+
+#box2{
+  display:flex;
+  flex-flow:column ;
+  background-color:rgb(224, 223, 222);
+  padding:0.5em;
+  margin:0;
+  align-items: center;
+}
+
+.image{
+   width:200px;
+   height:180px;
+   position:relative;
+   left:20%;
+   
+
+}
+#manufacturesimage{
+
+  width:200px;
+  height:200px;
+
+}
+
+#footercontainer{
+  display:flex;
+  flex-direction:column;
+  background-color:rgb(0, 0, 0);
+  padding:0;
+  margin:0;
+
+}
+#flexfooter{
+  display:flex;
+  flex-flow:column ;
+  background-color:#123c69;
+  padding:0;
+  margin:0;
+  align-items:center;
+}
+
+
+#flexfooter h2{
+  color:white;
+}
+
+  
+
+
+/*----------------------products page css styling--------------------------------------*/
+#paragraph{
+  font-size:25px;
+  text-align: center;
+  color:white;
+}
+
+
+
+.product-heading{
+  font-family: cursive;
+  font-style:italic;
+}
+
+#product-container{
+  display:flex;
+  flex-direction:column;
+  background-color: rgb(0, 0, 0);
+  margin:2px;
+
+}
+
+#flexbox1{
+  background-color:#c4dbf6;
+  order:1;
+  flex-grow:2;
+  margin:10px;
+  padding:0.5em;
+  align-items: center;
+}
+#flexbox2{
+  background-color:#e7e3d4 ;
+  order:4;
+  flex-grow:2;
+  margin:10px;
+  padding:0.5em;
+  align-items: center;
+}
+
+#flexbox3{
+  background-color:#8590aa;
+  order:5;
+  flex-grow:2;
+  margin:10px;
+  padding:0.5em;
+}
+
+#flexbox4{
+  background-color:#f3eddf ;
+  order:2;
+  flex-grow:2;
+  margin:10px;
+  padding:0.5em;
+  
+}
+
+#flexbox5{
+  background-color:#d1d7e0;
+  order:3;
+  flex-grow:2;
+  margin:10px;
+  padding:0.5em;
+}
+
+.productpicture{
+  height:200px;
+  width:200px;
+ position: relative;
+ left:10%;
+ top:80%;
+ margin:20px;
+}
+
+#table-container{
+  display:flex;
+  position: relative;
+  background-color:rgb(75, 59, 59);
+ 
+}
+
+
+.topic{
+ color:white;
+}
+
+.mainTable{
+    background-color:rgb(231, 230, 223);
+
+
+}
+#tablebody{
+    background-color: rgb(170, 209, 241);
+}
+.tableul{
+    list-style-type: none;
+  
+}
+
+
+/*----Styling Table for mobile view-----*/
+@media
+	  only screen 
+    and (Max-device-width:730px) 
+    {
+
+		table, thead, tbody, th, td, tr {
+      display: block;
+      
+		}
+
+		thead tr {
+			position: absolute;
+			top: -9999px;
+      left: -9999px;
+		}
+    #tablefooter td{
+  width:104px;
+  padding:0 102% ;
+  font-weight:bold;
+ 
+}
+    tr {
+      margin-bottom: 1rem;
+      border: 1px solid grey;
+    }
+      
+    tbody tr:last-child{
+      margin:0em;
+    }
+    tbody td:nth-child(1) {
+      background: rgb(156, 192, 183);
+      color: white;
+      text-align:center;
+      width:126px;
+    }
+    
+    
+		td {
+      background:#f2f2f2;
+      border:none;
+    
+			border-bottom: 1px solid black;
+			position: relative;
+			padding-left: 60%;
+    }
+
+  .price-list{
+       position: relative;
+       right:80px;
+      
+  }
+  
+
+		td:before {
+			position: absolute;
+			top: 0;
+			left: 6px;
+			padding-right: 10px;
+     
+		}
+
+    tbody td:nth-of-type(1):before { content: "Product"; font-weight: bold; }
+    tbody td:nth-of-type(2):before { content: "Feature"; font-weight:bold ;}
+    tbody td:nth-of-type(3):before { content: "Benefit"; font-weight:bold ;}
+    tbody td:nth-of-type(4):before { content: "Cost"; font-weight:bold ;}
+    tbody td:nth-of-type(5):before { content: "Manufacturer"; font-weight:bold ;}
+  
+  }
+
+  
+  /*----End of Styling Table for mobile view-----*/
+
+
+
+/*------------Manufactures Page CSS Styling-------------------*/
+
+.ManufacturerLogo{
+    height:120px;
+    width:120px;
+    margin:30px;
+}
+#machine{
+width:100%;
+}
+
+#mainheading{
+position: absolute;
+left:8%;
+top:75%;
+color:rgb(253, 250, 250);
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size:30px;
+}
+
+.mainpara{
+  font-size:20px;
+  text-align: center;
+}
+.Site{
+  font-size:18px;
+  font-style: italic;
+ text-align: center;
+}
+#manufactures-container{
+  display:flex;
+  flex-direction: column;
+  background-color: rgb(169, 224, 155);
+  width:95%;
+  height:auto;
+  margin:10px;
+  position: relative;
+  align-items: center;
+}
+.icon{
+  position: relative;
+ left:30%;
+  
+}
+
+.picture{
+  position: relative;
+  align-items: center;
+  width:320px;
+  height:200px;
+
+}
+
+.container {
+    position: relative;
+    
+  }
+  #CSSLinks{
+    display: flex;
+    flex-flow:row;
+    gap:110px;
+    align-items: center;
+  }
+#CSSimage1{
+         width:50px;
+         height:50px;
+      
+}
+#CSSimage2{
+  width:50px;
+  height:50px;
+ 
+ 
+}
+  
+
+  .FootIcon{
+    height:70px;
+    width:70px;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;  
+  }
+
+/*--------------------End of manufacture page Styling--------------------------------*/ 
+
+  /*------------------Contact Us page Styling---------------------------------------*/
+  
+#image{
+    width:100%;
+    height:auto;
+
+  }
+
+ 
+  #contactus-title{
+            position: relative;
+          
+            right:20%;
+            font-size:30px;
+            color:#423f3f
+  }
+
+  #form{
+    position: relative;
+        left:15%;
+
+  }
+
+ .label{
+     size:40px;
+     color:rgba(0, 0, 0, 0.932);
+ }
+ #submitbutton{
+   width:80px;
+   height:80px;
+ }
+
+ 
+/*-----/////--------//////------------Media Query for desktop universal Styling------//////-------////////-------*/
+
+@media only screen and (min-device-width:1281px)
+  {
+
+    *{
+      color:black;
+    }
+  
+    
+    #mainNav {
+      display: grid;
+        grid-template-columns:auto auto auto  ;
+        background: #ffffff;
+        margin:0;
+        
+    }
+    
+    #Navigation{
+      display: grid;
+        justify-items:unset;
+        grid-template-columns:auto auto auto auto ;
+      list-style-type: none;
+      position: absolute;
+    gap:120px;
+    top:8%;
+      font-size:20px;
+      left:15%;
+      background-color: white;
+    }
+
+    #Navi{
+      display: grid;
+        justify-items: center;
+        align-content: center;
+        grid-template-columns:auto auto auto auto ;
+        grid-gap: 2em;
+      list-style-type: none;
+      position: absolute;
+      top:8%;
+      right:8%;
+     gap:200px;
+     font-size:25px; 
+    }
+   
+    
+    #logo{
+      display:grid;
+      justify-content:start;
+      width:200px;
+      position: relative;
+      left:15%;
+      top:50%;
+      height:150px;
+      transform: translate(-50%, -50%);
+    
+    }
+    .greenlifelogo{
+         height:200px;
+         width:100px;
+
+    }
+    
+    h1,h2{
+      font-family:Times New Roman;
+      font-weight: bold;
+      color:rgba(0, 1, 3, 0.87);
+      font-size:40px;
+      text-align: center;
+  }
+  
+
+
+#manufacturelink{
+  font-size:25px;
+}
+.dropbtn {
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+ 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fafafa;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(156, 156, 156);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dropdown-content a:hover {background-color: #a7f1b7}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#footer-list li:nth-child(1){
+  list-style: url(../images/map.svg) ;
+ 
+
+}
+#footer-list li:nth-child(2){
+  list-style: url(../images/smartphone.svg);
+ 
+}
+#footer-list li:nth-child(3){
+  list-style: url(../images/gmail.svg);
+  
+}
+#footer-list li:nth-child(4){
+  list-style: url(../images/whatsapp.svg);
+ 
+}
+
+  }
+/*----------------------------End of media query for desktop universal Styling-------------------------------*/
+
+
+/*---------//--Media Query for Home Page desktop view-----//---------*/
+@media only screen and (min-device-width:1281px)
+  {
+  #video{
+    width:100%;
+    height:auto;
+}
+#maintopic{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  font-size:50px;
+  color:white;
+  text-transform: uppercase;
+  font-family:Lucida Handwriting;
+  }
+
+  #subheading{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    font-size: 40px;
+    color:white;
+    font-family:Lucida Handwriting;
+    text-transform: uppercase;
+    }
+
+    .image{
+      width:350px;
+      height:300px;
+      
+  }
+  
+  #manufacturesimage{
+
+    width:350px;
+    height:300px;
+  
+  }
+  .home-paragraph{
+    font-size:25px;
+   
+  }
+  
+  #MissionStatement{
+    font-size:25px;
+    font-weight:bold;
+  }
+
+  #flexContainer{
+    display:flex;
+    flex-direction:column;
+    background-color:#659DBD;
+    padding:0px;
+    margin:0;
+  }
+  
+
+  .box{
+    display:flex;
+    flex-flow:column;
+    background-color:rgb(221, 219, 210);
+    padding:20px;
+    margin:10px;  
+  }
+  #box2{
+    display:flex;
+    flex-flow:column ;
+    background-color:rgb(224, 223, 222);
+    padding:20px;
+    margin:10px;
+    align-items: center;
+  }
+
+
+  }
+  /*----------/-/-------End of media Query for desktop homepage----------//-----------/--*/
+
+/*------------Media Query for Desktop Products Page-----------//-----//----------------*/
+@media only screen and (min-device-width:1281px){
+
+  *{
+    font-size:22px;
+  }
+  .productpicture{
+                align-items: center;
+                width:600px;
+                height:500px;
+
+  }
+
+
+  #product-container{
+    display:flex;
+    flex-direction:column;
+    background-color: rgb(0, 0, 0);
+    margin:2px;
+  }
+  #flexbox1{
+    background-color:#c4dbf6;
+    order:1;
+    flex-grow:2;
+    margin:10px;
+    align-items: center;
+  }
+  #flexbox2{
+    background-color:#e7e3d4 ;
+    order:4;
+    flex-grow:2;
+    margin:10px;
+    align-items: center;
+  }
+  
+  #flexbox3{
+    background-color:#8590aa;
+    order:5;
+    flex-grow:2;
+    margin:10px;
+  }
+  
+  #flexbox4{
+    background-color:#f3eddf ;
+    order:2;
+    flex-grow:2;
+    margin:10px;
+    
+  }
+  
+  #flexbox5{
+    background-color:#d1d7e0;
+    order:3;
+    flex-grow:2;
+    margin:10px;
+  }
+  
+  .productpicture{
+   position: relative;
+   left:35%;
+   top:80%;
+   margin:20px;
+  }
+  
+  #table-container{
+    display:flex;
+    background-color:rgb(75, 59, 59);
+  
+    
+  }
+ 
+  
+  .topic{
+   color:white;
+  }
+  
+  table { 
+    position: relative;
+   left:65px;
+  
+  }
+ 
+  .mainTable{
+      background-color:rgb(231, 230, 223);
+     
+  }
+  #tablebody{
+      background-color: rgb(170, 209, 241);
+     
+  }
+  
+  
+  #tablefooter{
+      background-color: rgb(120, 148, 224);
+    
+  }
+        
+
+
+}
+/*---------END OF MEDIA QUERY FOR PRODUCT PAGE DESKTOP-------------*/
+/*-------------Media Query For Manufacture Page Desktop--------*/
+
+@media only screen and (min-device-width:1281px){
+
+  .ManufacturerLogo{
+    height:250px;
+    width:300px;
+    margin:30px;
+}
+
+#manufactures-container{
+          display:flex;
+          flex-flow: row;
+          gap:auto;
+}
+
+#machine{
+  width:100%;
+  height:80%;
+  }
+
+  #mainheading{
+    position: absolute;
+    left:10%;
+    top:40%;
+    color:rgb(255, 255, 255);
+    font-size:80px;
+    }
+    .mainpara{
+      font-size:25px;
+    }
+    .Site{
+      font-size:30px;
+    }
+
+    #manufactures-container{
+      display:flex;
+      background-color: rgb(236, 236, 236);
+      width:100%;
+      height:auto;
+      margin:10px;
+      position: relative;
+      right:10px;
+    }
+    
+    .container {
+      position: relative;
+      
+    }
+  .picture{
+      height:90%;
+      width:100%;
+      opacity: 1;
+      display: block;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .heading{
+      opacity: 0;
+      transition: .5s ease;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+  }
+
+  .mainpara{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+.container:hover .picture {
+    opacity: 0.3;
+  }
+  
+  .container:hover .mainpara {
+    opacity: 1;
+  }
+  .container:hover .heading {
+    opacity: 1;
+  }
+  
+  .Site{
+    text-align:center;
+}
+
+.icon{
+  height:70px;
+  width:70px;
+  display:block;
+  margin-left:20%;
+  margin-right:20%;  
+  
+}
+#CSSLinks{
+  display:flex;
+flex-flow:row;
+ gap:1400px;
+}
+
+
+
+
+
+}
+/*---------END OF MEDIA QUERY FOR MANUFACTURERS PAGE DESKTOP-------------*/
+
+/*--------//------Media Query for Contact us Page Desktop-------///-----*/
+
+@media only screen and (min-device-width:1281px){
+
+  #image{
+    width:100%;
+    height:auto;
+
+  }
+  .input-size{
+    width:200px;
+    height:40px;
+  }
+
+  #formsection{
+   position:absolute;
+   top: 50%;
+   left: 8%;
+   
+} 
+
+#form{
+size:500px;
+}
+
+.label{
+ color:rgb(255, 255, 255);
+  font-size: 30px;
+}
+#contactus-title{
+  font-size:60px;
+  color:rgb(255, 255, 255);
+}
+}
+/*---------END OF MEDIA QUERY FOR CONTACT US PAGE DESKTOP-------------*/
+
+/*----------//----/////------Media Query for Ipad-----------////---------////--------------//------*/
+/*------------//--------Universal Styling-------------------//---------------*/
+
+@media only screen and (min-device-width:768px) and (max-width:1024px) {
+
+  *{
+    font-size:30px;
+  }
+
+  h1,h2{
+    font-size:40px;
+  }
+#logo{
+  width:300px;
+  height:200px;
+  position: relative;
+  left:30%;
+}
+#flexfooter h2 {
+  font-size: 35px;
+}
+
+#footer-list li{
+   font-size:30px;
+}
+}
+
+/*------------//--------Home Page Styling Ipad-------------------//---------------*/
+@media only screen and (min-device-width:768px) and (max-width:1024px) {
+
+#video{
+  width:100%;
+  height:auto;
+}
+#maintopic{
+position: absolute;
+top: 40%;
+left: 45%;
+font-size:50px;
+}
+
+#subheading{
+  position: absolute;
+  top:60%;
+  left: 30%;
+  font-size: 40px;
+  }
+
+.image{
+  width:450px;
+  height:350px;  
+}
+
+#manufacturesimage{
+  width:450px;
+  height:350px;
+}
+.home-paragraph{
+  font-size:25px;
+}
+
+#MissionStatement{
+  font-size:30px;
+  font-weight:bold;
+}
+}
+
+/*------------//--------Product Page Styling Ipad-------------------//---------------*/
+@media only screen and (min-device-width:768px) and (max-width:1024px) {
+
+  .productpicture{
+    align-items: center;
+    width:550px;
+    height:400px;
+
+}
+#paragraph{
+  font-size: 30px;
+}
+
+  table,#mainTable, tbody, th, td, tr {
+    display: block;
+    width:93.32%;
+  }
+  
+  thead tr {
+    position: absolute;
+    top:-9999px;
+    left:-9999px;
+  }
+  #tablefooter td{
+    width: 170px;
+    padding:0 185%;
+    font-weight:bold;
+  }
+
+  tr {
+    margin-bottom: 0px;
+    border: 1px solid grey;
+  
+  
+  }
+    
+  
+  .mainTable:nth-child(1) {
+    background: rgb(164, 160, 230);
+    color: white;
+    text-align:center;
+    height:100px;
+   
+  }
+  
+  td {
+    background:#f2f2f2;
+    border: none;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-left: 60%;
+  }
+  
+  .price-list{
+     position: relative;
+     right:110px;
+    
+  }
+  
+  
+  td:before {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 5%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  
+  tbody td:nth-of-type(1):before { content: "Product"; font-weight: bold; }
+  tbody td:nth-of-type(2):before { content: "Feature"; font-weight:bold ;}
+  tbody td:nth-of-type(3):before { content: "Benefit"; font-weight:bold ;}
+  tbody td:nth-of-type(4):before { content: "Cost"; font-weight:bold ;}
+  tbody td:nth-of-type(5):before { content: "Manufacturer";font-weight:bold ;}
+  
+  }
+
+
+
+
+/*------------//--------Manufacturers Page Styling IPad-------------------//---------------*/
+@media only screen and (min-device-width:768px) and (max-width:1024px) {
+
+#mainheading{
+  font-size: 50px;
+  top:60%;
+}
+.ManufacturerLogo{
+  width:200px;
+  height:200px;
+}
+.picture{
+  width:100%;
+  height:auto;
+}
+
+.mainpara{
+  font-size: 30px;
+}
+
+.Site{
+  font-size:25px;
+}
+
+.icon{
+  left:330px;
+}
+
+#CSSLinks{
+  gap:500px;
+}
+#CSSimage1{
+  width:100px;
+  height:100px;
+}
+#CSSimage2{
+  width:100px;
+  height:100px;
+}
+}
+/*------------//--------Contact Us Page Styling IPad-------------------//---------------*/
+@media only screen and (min-device-width:768px) and (max-width:1024px) {
+
+  #contactus-title{
+    font-size: 50px;
+    color:rgb(0, 0, 0);
+  }
+  #formsection{
+    background-color:#659DBD;
+  
+  }
+
+}
+

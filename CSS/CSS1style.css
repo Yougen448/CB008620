@@ -1,0 +1,343 @@
+h1{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color:rgb(248, 8, 0)
+}
+
+body{
+  margin:0;
+}
+
+
+#logo{
+    width:100px;
+    height:100px;
+    position: relative;
+    right:30%;
+  left:30%;
+}
+#mainNav{
+  background-color: rgb(1, 117, 53);
+ 
+}
+
+#Navigation{
+ display:grid;
+ list-style-type:none;
+ gap:20px;
+
+ position: relative;
+ background-color:rgb(0, 0, 0);
+text-align: center;
+ margin:0;
+ grid-template-columns: auto auto auto auto;
+font-family:cursive;
+}
+
+#main-container{
+            background-color: rgb(0, 0, 0);
+            grid-template-columns: auto auto auto auto;
+            margin:0px;
+            
+}
+
+
+.box-container{
+  background-color:#D7CEC7;
+  margin:0.5em;
+  padding:0.5em;
+ 
+ }
+
+
+
+
+#mainpic{
+    width:320px;
+  height:250px;
+  object-fit:cover;
+
+}
+
+#think{
+  width:200px;
+  height:200px;
+  position: relative;
+  border:solid #0b0c0c .1em;
+ left:50px;
+}
+
+
+   
+#marinePicture{
+  right:20px;
+  position: relative;
+   width:250px;
+   height:200px;
+   border:solid #0b0c0c .1em;
+}
+.ProblemPicture{
+  right:55px;
+  position: relative;
+   width:250px;
+   border:solid #0b0c0c .1em;
+   height:200px;
+}
+
+#icon{
+  height:70px;
+  width:70px;
+  display:block;
+  margin-left:70px;
+  margin-right:auto;  
+}
+
+
+
+.unordered-list{
+        list-style-type:none;
+
+}
+
+.list{
+      height:50px;
+      width:50px;
+}
+
+#gogreenpic{
+        height:200px;
+        width:99%;
+        border:solid #0b0c0c .1em;
+        position: relative;
+}
+
+
+
+#footer-list li:nth-child(1){
+  list-style: url(../images/MapsMobile.svg) ;
+ 
+
+}
+#footer-list li:nth-child(2){
+  list-style: url(../images/SmartphoneMobile.svg);
+ 
+}
+#footer-list li:nth-child(3){
+  list-style: url(../images/GmailMobile.svg);
+  
+}
+#footer-list li:nth-child(4){
+  list-style: url(../images/WhatsappMobile.svg);
+ 
+}
+
+#footer-box{
+  background-color: rgb(0, 8, 83);
+ color:rgb(255, 255, 255)
+
+}
+
+/*----------///----------------Desktop view CSS1-------------//--------*/
+@media only screen and (min-device-width:1281px){
+*{
+  font-size: 20px;
+}
+
+
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(0, 0, 0);
+  text-decoration:underline;
+  font-style:italic;
+}
+
+ #logo{
+  width:400px;
+  height:200px;
+}
+
+#mainpic{
+    width:100%;
+  height: 600px;
+  object-fit:cover;
+}
+
+.list:hover{
+     transform: scale(2,2);
+     -webkit-transform:scale(2,2) ;
+     -moz-transform:scale(2,2) ;
+}
+
+.box-container{
+           padding:2em;
+}
+
+
+
+#think{
+position: relative;
+left:30%;
+  width:500px;
+  height:500px;
+}
+
+#think:hover{
+  transform:matrix(1,0,-0.5,1,0,0);
+  -webkit-transform:matrix(1,0,-0.5,1,0,0);
+}
+#marinePicture{
+  width:600px;
+  height: 400px;
+  left:350px;
+  position: relative;
+}
+
+.ProblemPicture{
+   width:50%;
+   height:50%;
+    left:350px;
+  position: relative;
+}
+.caption{
+  font-style:italic;
+  text-align:center;
+}
+
+
+#icon{
+  height:70px;
+  width:70px;
+  display:unset;
+  margin-left:600px;
+  margin-right:500px;  
+  
+}
+#icon:hover{
+  transform:matrix(1,0,-0.5,1,0,0);
+  -webkit-transform:matrix(1,0,-0.5,1,0,0);
+
+}
+
+#gogreenpic{
+  position: relative;
+  left:10%;
+  width:80%;
+  height:500px;
+}
+
+.list2{
+          font-family:cursive;
+          text-align: center;
+        color:rgb(238, 12, 12) ;
+}
+
+.list2Para{
+  text-align: center;
+}
+
+#footer-list li:nth-child(1){
+  list-style: url(../images/map.svg) ;
+ 
+
+}
+#footer-list li:nth-child(2){
+  list-style: url(../images/smartphone.svg);
+ 
+}
+#footer-list li:nth-child(3){
+  list-style: url(../images/gmail.svg);
+  
+}
+#footer-list li:nth-child(4){
+  list-style: url(../images/whatsapp.svg);
+ 
+}
+#footer{
+  text-align: center;
+  font-size:30px;
+}
+#footer-list{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:auto auto;
+  
+ justify-items: center;
+ font-size:25px;
+ gap:50px;
+}
+
+}
+/*Stylinig for IPad*/
+@media only screen and (min-device-width:768px) and (max-width:1024px) {
+*{
+  font-size:30px;
+}
+
+#logo{
+  width:300px;
+  height:200px;
+}
+
+#think{
+  
+  width:400px;
+  height:400px;
+
+}
+
+.list{
+  width:80px;
+  height:80px;
+}
+#mainpic{
+  width:100%;
+  height:auto;
+}
+
+#marinePicture{
+  left:100px;
+  position: relative;
+   width:450px;
+   height:400px;
+
+}
+.ProblemPicture{
+  left:10%;
+  position: relative;
+   width:450px;
+   height:400px;
+}
+
+.caption{
+  text-align: center;
+}
+#gogreenpic{
+  height:400px;
+}
+.list2{
+  font-family:cursive;
+  text-align: center;
+color:rgb(12, 129, 238) ;
+}
+#icon{
+  position: relative;
+ left:250px;
+}
+
+#footer{
+  text-align: center;
+  font-size:40px;
+}
+#footer-list{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:auto auto;
+  
+ justify-items: center;
+ font-size:25px;
+ gap:50px;
+ padding:2em;
+}
+}
+
