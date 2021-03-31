@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+
+<link rel="manifest" href="manifest.json">
+<link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bd55f">
+<link rel="shortcut icon" href="./images/favicon.ico">
+<meta name="msapplication-TileColor" content="#00a300">
+<meta name="msapplication-config" content="./images/browserconfig.xml">
+<meta name="theme-color" content="#77df97">
+    <title>Green Life- Products</title>
+    <link rel="Stylesheet" href="CSS/style.css">
+    <link rel="Stylesheet" href="CSS/normalize.css">
+    </head>
+<body>
+    <header >
+        <nav>
+            <div id="mainNav">
+                <img src="images/logo.webp" alt="companylogo" id="logo" >
+                </div>
+                <!--Main Navigation Starting -->
+                    <ul id="Navi">
+                        <li class="list"><a href="index.html">Home</a></li>
+                        <li class="list"><a href="Products.html">Our Products</a></li>
+                        <li class="list">
+                       <div class="dropdown">
+                       <span class="dropbtn" id="manufacturelink"><a href="Manufactures.html">Manufacturers</a></span>
+                       <div class="dropdown-content">
+                        <a href="CSS1.html">CSS 1</a>
+                        <a href="CSS2.html">CSS 2</a>
+                        </div>
+     
+                    </div>
+                </li>
+                <li class="list"><a href="BuyNow.html">Buy Now</a></li>
+                        
+                <li class="list"><a href="contactUs.html">Contact Us</a></li>
+                    </ul>  
+        </nav>
+        </header>
+
+        <img src="images/buynowpageimage-200.webp" alt="BuyNow" srcset="images/buynowpageimage-200.webp 1x, images/buynowpageimage-400.webp 2x, images/buynowpageimage-600.webp 3x" id="buynowpic">
+
+       <h1 id="buynowtopic">GET YOUR ECO-FRIENDLY PRODUCTS NOW</h1>
+<section>
+   <form id="BuyNow_Forms">
+    <h2>Manufacturers</h2>
+       <fieldset id="manufacturersfieldset">
+   
+       <p>
+           <label> <img src="images/EcoProductsLogo.webp" class="image1" alt="EPS">  <input type="radio" id="Eco-ProductsSL" name="Manufactures" value="Eco-Products SL" onclick="current_manufacturers()" ></label>
+         
+        </p>
+       <p>
+        <label><img src="images/Ecoware.webp" class="image1" alt="EL"><input type="radio" id="EcowareLanka" name="Manufactures" value="EcowareLanka" onclick="current_manufacturers()" ></label>
+        
+    </p>
+    <p>
+        <label><img src="images/Trickledown.webp" id="image2" alt="TD">  <input type="radio" id="Trickledown" name="Manufactures" value="Trickledown" onclick="current_manufacturers()" ></label>
+      
+    </p>
+    <p>
+        <label><img src="images/BackToEarth.webp" class="image1" alt="BTE"> <input type="radio" id="BacktoEarth" name="Manufactures" value="BacktoEarth" onclick="current_manufacturers()"></label>
+    </p>
+   </fieldset>
+ <div id="containerbuynow">
+   <fieldset class="fieldset">
+  <h2 class="headingForms">Products</h2>
+    <p>
+        <label>Bags LKR 1000</label>
+       <input type="radio" id="Bags" name="Products" value="Bags" onclick="Products_click();FindTotalCost()" >
+       </p>
+   
+    <p>
+        <label>Plates LKR 2000</label>
+        <input type="radio" id="Plates" name="Products" value="Plates" onclick="Products_click();FindTotalCost()" >
+    </p>
+   
+    <p>
+        <label>mugs LKR 2500</label>
+        <input type="radio" id="Mugs" name="Products" value="Mugs" onclick="Products_click();FindTotalCost()" >
+    </p>
+   
+    <p>
+        <label>Soap LKR 800</label>
+        <input type="radio" id="Soap" name="Products" value="Soap" onclick="Products_click();FindTotalCost()" >
+    </p>
+   </fieldset>
+
+<fieldset class="fieldset">
+    <h2  class="headingForms">Size</h2>
+    <p>
+        <label>Small</label>
+        <input type="radio" id="Small" name="Size" value="Small" onclick="Size_click();FindTotalCost()" >
+    </p>
+    <p>
+        <label>Medium LKR 2500</label>
+        <input type="radio" id="Medium" name="Size" value="Medium"  onclick="Size_click();FindTotalCost()" >
+    </p>
+    <p>
+        <label>Large LKR 5000</label>
+        <input type="radio" id="Large" name="Size" value="Large"  onclick="Size_click();FindTotalCost()" >
+    </p>
+   
+</fieldset>
+
+<fieldset class="fieldset">
+    <h2  class="headingForms">Extras</h2>
+    <p>
+        <label>Eco-friendly packaging LKR 500</label>
+        <input type="radio" id="packaging" name="Extras" value="packaging" onclick="Extra_click();FindTotalCost()" >
+    </p>
+    <p>
+        <label>Eco-friendly greeting cards LKR 1000</label>
+        <input type="radio" id="cards" name="Extras" value="cards" onclick="Extra_click();FindTotalCost()" >
+    </p>
+    <p>
+        <label>Eco-friendly decorations LKR 1500 </label>
+        <input type="radio" id="decorations" name="Extras" value="decorations" onclick="Extra_click();FindTotalCost()" >
+    
+    </p>
+</fieldset>
+</div>
+</form>
+<br>
+
+<h2 class="headingForOrders">Current Orders</h2>
+
+<div id="current_order_table">
+    
+<p class="currentTable">
+    <lable>Manufacturers</lable>
+    <input type="text" name="current_manufacturers" id="current_manufacturers" readonly >
+</p>
+<p class="currentTable">
+    <lable>Products</lable>
+
+    <input type="text" name="current_product" id="current_product"  readonly >
+</p>
+<p class="currentTable">
+    <lable>Size</lable>
+    <input type="text" name="current_size" id="current_size" readonly >
+</p>
+<p class="currentTable">
+    <lable>Extras</lable>
+    <input type="text" name="current_extras" id="current_extras" readonly >
+</p>
+<p class="currentTable">
+    <lable>Total Cost</lable>
+    <input type="text" name="current_totalcost" id="current_totalcost"  readonly >
+</p>
+</div>
+
+<div class="button_1">
+    <button type="button" class="button" id="AddFav">Add to Favourite</button>
+</div> 
+<div class="button_1">
+<button type="button" class="button" id="addorder">Add to Order</button>
+</div>
+
+<div class="button_1">
+    <button type="button" class="button" id="OrderFav">Order Favourite</button>
+</div> 
+<br>
+<br>
+<h2 class="headingForOrders">Over all Order</h2>
+
+<table id="OverallorderTable">
+    <tr>
+        <th>Over all Order Table</th>
+        
+    </tr>
+</table>
+<br>
+<div id="GrandTotal">
+<lable>Grand Total </lable>
+<input type="text" name="totaloverallcost" id="totaloverallcost" readonly>
+</div>
+
+<br>
+<div class="button_1">
+    <button type="button" class="button" id="PlaceOrder">Place Order</button>  
+    </div>  
+
+    <div>
+        <button type="button"  id="checkLoyalty">Check Loyalty</button>  
+        </div> 
+
+    <div id="Loyalty_PointPara">
+        <p id="LoyalPoint">
+      Loyalty Point
+        </p>
+         </div>
+           
+    <div id="footer_container">
+        <footer id="flexfooter">
+                <h2 >For further Inquiries please contact. </h2>
+                <ul id="footer-list">
+                    <li>Address : No-94/5 First Cross Street Colombo-13</li>
+                    <li>Phone Number : 0757103471</li>
+                    <li>Email us to : CB008620@students.apiit.lk </li>
+                    <li> WhatsApp : 0758634955</li>
+                </ul>
+                <!--//Name:Sivaselvan Yougen//-->  
+      <!--//Contact Number:0757103471//-->
+      <!--//Images were taken from: Flaticon ("https://www.flaticon.com/")//-->
+        
+        </footer>
+        <!--Footer container ending-->
+    </div>
+    </section>
+<script src="script/main.js"></script>
+</body>
+</html>
