@@ -168,7 +168,7 @@ function getTotalCost(){
     return teaTotalPrice;
 }
 
-//This was taken from W3SCHOOLS https://www.w3schools.com/jsref/met_table_insertrow.asp //
+
 let addOrderButton=document.getElementById("addorder");
 addOrderButton.addEventListener("click",overallTable);
 
@@ -207,7 +207,7 @@ function overallTable(){
             document.getElementById("current_totalcost").value="";
             document.getElementById("totaloverallcost").value="LKR " +totaloverallcost;
 
- //This is to reset the radio buttons once the user clicks the add order button//took from https://www.w3schools.com/jsref/prop_radio_checked.asp
+ //This is to reset the radio buttons once the user clicks the add order button//
             document.getElementById("Eco-ProductsSL").checked = false;
             document.getElementById("EcowareLanka").checked = false;
             document.getElementById("Trickledown").checked = false;
@@ -226,7 +226,6 @@ function overallTable(){
 
     
 ///=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Place order button-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-///
-//see the book eloquent_javascript page 349 to do add favourite button
 
 let placeOrderButton=document.getElementById("PlaceOrder");
 placeOrderButton.addEventListener("click",PlaceOrder);
@@ -263,8 +262,9 @@ function addFavOrder(){
 
     //initializing the Current Items to a variable called addingFav
 var addingfav={manufacturers,typeOfProduct,SizeOfProduct,ExtraPackages,CurrentProductPrice};
+//if there is not order in the current order table then the value will be stored as ""//
 if(localStorage.getItem("Favourite")==null){
-    localStorage.setItem("Favourite","[]");
+   localStorage.setItem("Favourite","[]");
 }
 
 var favouriteItem=JSON.parse(localStorage.getItem("Favourite"));
@@ -293,42 +293,8 @@ localStorage.setItem("Favourite",JSON.stringify(favouriteItem));
             document.getElementById("packaging").checked = false;
             document.getElementById("cards").checked = false;
             document.getElementById("decorations").checked = false;   
-
         }
     
-//Order Favourite button
-
-let orderFavButton=document.getElementById("OrderFav");
-orderFavButton.addEventListener("click",orderFavourites);
-
-function orderFavourites(){
-    
-    
-    var table = localStorage.getItem("Favourite");
-    
-     table = document.getElementById("OverallorderTable");
-                  
-    let newRow = table.insertRow(table.rows.length);
-    
-    // add cells to the row
-   
-    let cell1 = newRow.insertCell(0);
-    let cell2 = newRow.insertCell(1);
-    let cell3 = newRow.insertCell(2);
-    let cell4 = newRow.insertCell(3);
-    let cell5 = newRow.insertCell(4);
-
-
-    // Displaying results in the table
-    cell1.innerHTML = Favourite[0]; // Brand
-    cell2.innerHTML = Favourite[1]; // Size
-    cell3.innerHTML = Favourite[2]; // Package
-    cell4.innerHTML = Favourite[3]; // Extras
-    cell5.innerHTML = Favourite[4]; // Total Price
-
-
-}
-
 
 // Checking Loyalty Points 
 
@@ -352,6 +318,8 @@ appears in the website*/
     }
   
 }
+
+
 
 
 
